@@ -1,131 +1,166 @@
-Módulo 2: Introdução ao Python
-Objetivo do Módulo
-Neste módulo, os alunos serão introduzidos à linguagem Python, suas características e aplicações. Aprenderão a configurar o ambiente de desenvolvimento, escrever seus primeiros programas e entender conceitos básicos como variáveis e tipos de dados.
+# Projeto de Introdução ao Python
 
-Estrutura da Aula
-1. Introdução ao Python (20 minutos)
-📌 O que é Python e por que é popular?
-Linguagem de alto nível, fácil de aprender e muito versátil.
-Aplicações: desenvolvimento web, ciência de dados, automação, machine learning, entre outras.
-📌 Principais características do Python:
-✅ Sintaxe simples e legível.
-✅ Linguagem interpretada (execução linha por linha).
-✅ Grande comunidade e vasta coleção de bibliotecas.
+Este projeto é uma coleção de exemplos e atividades práticas para introduzir os conceitos básicos da linguagem Python. Ele inclui desde o primeiro programa em Python até um projeto prático que interage com o usuário e exibe a hora atual.
 
-2. Instalação e Configuração do Ambiente (30 minutos)
-📌 Instalando o Python
-Windows: Download e instalação pelo site oficial.
-Linux/Mac: Verificar a instalação com python3 --version e instalar, se necessário.
-📌 Configurando o ambiente de desenvolvimento
-Escolha do editor: VS Code ou PyCharm.
-Configuração para rodar scripts Python.
-📌 Testando a instalação
-Abrir o terminal e digitar python ou python3 para acessar o interpretador Python.
+---
 
-3. Primeiros Passos no Python (40 minutos)
-📌 O interpretador Python
-Executando comandos diretamente no terminal.
-Usando o interpretador como calculadora.
-📌 Escrevendo o primeiro programa
+## 🚀 Como Usar
 
+### Pré-requisitos
+- **Python 3.x** instalado no seu computador.
+- Um editor de texto ou IDE (recomendamos [VS Code](https://code.visualstudio.com/) ou [PyCharm](https://www.jetbrains.com/pycharm/)).
+
+### Configuração do Ambiente
+1. **Instale o Python**:
+   - Baixe e instale o Python a partir do [site oficial](https://www.python.org/).
+   - Verifique a instalação executando no terminal:
+     ```bash
+     python --version
+     ```
+     ou
+     ```bash
+     python3 --version
+     ```
+
+2. **Clone o repositório**:
+   - Se você estiver usando Git, clone este repositório:
+     ```bash
+     git clone https://github.com/seu-usuario/nome-do-repositorio.git
+     ```
+
+3. **Navegue até a pasta do projeto**:
+   - No terminal, acesse a pasta onde os arquivos estão salvos:
+     ```bash
+     cd nome-do-repositorio
+     ```
+
+---
+
+## 📂 Estrutura do Projeto
+
+O projeto contém os seguintes arquivos:
+
+1. **`primeiro_programa.py`**:
+   - Um programa simples que exibe "Olá, mundo!" no terminal.
+
+2. **`variaveis_tipos.py`**:
+   - Exemplo de uso de variáveis e tipos de dados em Python.
+
+3. **`manipulacao_strings.py`**:
+   - Demonstração de métodos para manipulação de strings, como `strip()` e `lower()`.
+
+4. **`input_usuario.py`**:
+   - Um programa que solicita o nome do usuário e exibe uma mensagem personalizada.
+
+5. **`desafio_hora_atual.py`**:
+   - Um desafio que exibe a hora atual junto com uma saudação personalizada.
+
+6. **`programa_personalizado.py`**:
+   - Um projeto prático que combina entrada do usuário e exibição da hora atual.
+
+---
+
+## ▶️ Como Executar os Códigos
+
+Para executar qualquer um dos arquivos Python, siga os passos abaixo:
+
+1. Abra o terminal na pasta do projeto.
+2. Execute o arquivo desejado com o comando:
+   ```bash
+   python nome_do_arquivo.py
+   ```
+   ou
+   ```bash
+   python3 nome_do_arquivo.py
+   ```
+
+Exemplo:
+```bash
+python primeiro_programa.py
+```
+
+---
+
+## 🧠 O Que Você Vai Aprender
+
+- **Sintaxe básica do Python**: Como escrever e executar programas simples.
+- **Variáveis e tipos de dados**: Como armazenar e manipular informações.
+- **Manipulação de strings**: Como trabalhar com textos em Python.
+- **Interação com o usuário**: Como usar a função `input()` para capturar dados.
+- **Trabalhando com datas e horas**: Como usar a biblioteca `datetime` para exibir a hora atual.
+
+---
+
+## 📝 Exemplos de Códigos
+
+### 1. Primeiro Programa (`primeiro_programa.py`)
+```python
 print("Olá, mundo!")
+```
 
-📌 Executando um script Python
-
-python nome_do_arquivo.py
-
-📌 Trabalhando com variáveis e tipos de dados
-✅ O que são variáveis e como atribuir valores?
-✅ Principais tipos de dados:
-int (números inteiros)
-float (números decimais)
-str (textos)
-bool (valores booleanos)
-📌 Exemplo:
-
-nome = "Estevão"
-idade = 30
-altura = 1.75
-estudante = True
-
-
-4. Manipulação de Strings (30 minutos)
-📌 O que são strings e como manipulá-las?
-Concatenação de strings
-
-saudacao = "Olá, " + nome + "!"
-
-Métodos úteis de strings
-upper(), lower(), strip(), replace(), split().
-📌 Exemplo prático:
-
-mensagem = "  Python é incrível!  "
-print(mensagem.strip())  # Remove espaços em branco
-print(mensagem.lower())  # Converte para minúsculas
-
-
-5. Atividade Prática (40 minutos)
-✅ Criar um programa que solicita o nome do usuário e exibe uma mensagem personalizada.
-📌 Exemplo:
-
-nome = input("Qual é o seu nome? ")
-print(f"Olá, {nome}! Bem-vindo ao curso de Python.")
-
-
-6. Desafio Extra (20 minutos)
-✅ Exibir a hora atual junto com a saudação.
-📌 Usando a biblioteca datetime:
-
-from datetime import datetime
-agora = datetime.now()
-hora_atual = agora.strftime("%H:%M")
-print(f"Olá, {nome}! Agora são {hora_atual}.")
-
-
-Exemplos de Código
-📌 Primeiro Programa
-
-print("Olá, mundo!")
-
-📌 Variáveis e Tipos de Dados
-
+### 2. Variáveis e Tipos de Dados (`variaveis_tipos.py`)
+```python
 nome = "Maria"
 idade = 25
 altura = 1.68
 estudante = True
 
 print(f"Nome: {nome}, Idade: {idade}, Altura: {altura}, Estudante: {estudante}")
+```
 
-📌 Manipulação de Strings
-
+### 3. Manipulação de Strings (`manipulacao_strings.py`)
+```python
 mensagem = "  Python é divertido!  "
 print(mensagem.strip())  # Remove espaços em branco
 print(mensagem.lower())  # Converte para minúsculas
+```
 
-📌 Programa com Input do Usuário
-
+### 4. Interação com o Usuário (`input_usuario.py`)
+```python
 nome = input("Qual é o seu nome? ")
 print(f"Olá, {nome}! Bem-vindo ao curso de Python.")
+```
 
-📌 Desafio Extra: Hora Atual
-
+### 5. Desafio: Hora Atual (`desafio_hora_atual.py`)
+```python
 from datetime import datetime
+
+nome = input("Qual é o seu nome? ")
 agora = datetime.now()
 hora_atual = agora.strftime("%H:%M")
-nome = input("Qual é o seu nome? ")
 print(f"Olá, {nome}! Agora são {hora_atual}.")
+```
 
+### 6. Projeto Prático (`programa_personalizado.py`)
+```python
+from datetime import datetime
 
-Projeto Prático
-📌 Descrição: Criar um programa que solicita o nome do usuário e exibe uma mensagem personalizada, incluindo a hora atual.
-📌 Passos:
-Solicitar o nome do usuário com input().
-Utilizar a biblioteca datetime para obter a hora atual.
-Exibir uma mensagem personalizada com o nome e a hora atual.
+nome = input("Qual é o seu nome? ")
+agora = datetime.now()
+hora_atual = agora.strftime("%H:%M")
+print(f"Olá, {nome}! Agora são {hora_atual}.")
+```
 
-Checklist de Entrega
-✅ Programa que exibe uma mensagem personalizada.
-✅ Uso de input() para capturar o nome do usuário.
-✅ Uso da biblioteca datetime para exibir a hora atual.
-✅ Código enviado para o repositório GitHub na pasta Modulo_01/.
+---
 
+## 📌 Dicas Extras
+
+- **Explore outros métodos de strings**: Experimente métodos como `replace()`, `split()`, `upper()`, etc.
+- **Adicione funcionalidades**: Tente modificar o programa para exibir a data completa ou adicionar mais interações com o usuário.
+- **Pratique**: Crie seus próprios programas usando os conceitos aprendidos.
+
+---
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+---
+
+## 🤝 Contribuições
+
+Contribuições são bem-vindas! Se você tiver sugestões ou melhorias, sinta-se à vontade para abrir uma **issue** ou enviar um **pull request**.
+
+---
+
+Espero que esse README seja útil! Se precisar de mais ajustes ou informações, é só avisar. 😊
